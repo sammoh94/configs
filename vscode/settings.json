@@ -1,0 +1,30 @@
+{
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "mononoki Nerd Font",
+  "terminal.integrated.shell.osx": "/usr/local/bin/fish",
+  "python.formatting.provider": "yapf",
+  "python.formatting.yapfArgs": [
+    "--style",
+    "{based_on_style: pep8, column_width: 100, blank_line_before_nested_class_or_def: true, space_between_ending_comma_and_closing_bracket: false, indent_width: 20}"
+  ],
+  "editor.minimap.enabled": false,
+  "window.zoomLevel": 1,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.editor.splitSizing": "split",
+  "editor.formatOnSaveTimeout": 2000,
+  "rust-client.channel": "nightly",
+  "rust-client.enableMultiProjectSetup": null,
+  "workbench.colorTheme": "Material Theme Darker High Contrast",
+  "editor.largeFileOptimizations": false,
+  "editor.detectIndentation": false,
+  "[yaml]": {},
+  "files.associations": {
+    "*.yml": "yaml"
+  },
+  "editor.formatOnSave": true
+}
