@@ -14,5 +14,11 @@ omf install bass
 
 mkdir ~/.config/fish/
 cp ./config.fish ~/.config/fish/config.fish
+
+# Install nerd font
+omf install bobthefish
+brew tap homebrew/cask-fonts
+brew cask install font-mononoki-nerd-font
+
 rm -rf ~/.Desktop/fish_configs
 exit
