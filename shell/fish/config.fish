@@ -1,3 +1,6 @@
+
+bash ~/.config/fish/check_homebrew_install.sh
+
 set -g theme_powerline_fonts no
 set -g theme_nerd_fonts yes
 set -g theme_color_scheme solarized
@@ -29,9 +32,19 @@ alias tflist="terraform state list"
 alias tfplan="terraform plan"
 alias tfswitch="terraform workspace select"
 alias tfmt="terraform fmt"
+alias tst="tig status"
+alias stash="git stash"
+alias awscreds="code ~/.aws/credentials"
+alias build="cargo build"
+alias run="cargo run"
+alias tmuxconf="code ~/.tmux.conf"
+alias thanks="fuck"
+alias desk='cd ~/Desktop'
 
+export RUST_LOG=info
 export PATH="/Users/samarth/.ssi/bin:$PATH"
 export PATH="/Users/samarth/Library/Python/3.6/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
 
 # Setting PATH for Python 3.6
 # The original version is saved in .bash_profile.pysave
@@ -46,3 +59,6 @@ end
 
 set -x NVM_DIR ~/.nvm
 nvm use default --silent
+source /usr/local/opt/asdf/asdf.fish
+
+thefuck --alias | source
